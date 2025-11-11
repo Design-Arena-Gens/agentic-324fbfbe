@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  @apply min-h-screen bg-slate-50 text-slate-900 antialiased transition-colors duration-500 ease-out;
+}
+
+body.dark {
+  @apply bg-slate-950 text-slate-100;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply rounded-full bg-slate-700/70;
+}
